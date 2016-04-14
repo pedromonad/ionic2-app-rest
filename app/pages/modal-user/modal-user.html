@@ -1,0 +1,18 @@
+<ion-navbar *navbar>
+	<ion-buttons start>
+		<button (click)="cancel()"><ion-icon name="close"></ion-icon></button>
+	</ion-buttons>
+	<ion-title>User</ion-title>
+
+</ion-navbar>
+
+<ion-content padding class="modal-user">
+  <ion-list>
+  	<ion-item>
+		  <ion-label stacked>Name:</ion-label>
+		  <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+  	</ion-item>
+  </ion-list>
+  <button block light (click)="save(user)">Salvar</button>
+
+</ion-content>

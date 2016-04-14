@@ -1,0 +1,24 @@
+<ion-navbar>
+  <ion-title>
+    Users
+  </ion-title>
+
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="#item of listUser" >
+      <ion-item (click)="edit($event,item)">
+        {{ item.name }}
+      </ion-item>
+
+      <ion-item-options>
+        <button danger (click)="delete($event, item)">Delete</button>
+      </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+  <button fab danger fab-bottom fab-right (click)="insert()"><ion-icon name="add"></ion-icon></button>
+</ion-content>
