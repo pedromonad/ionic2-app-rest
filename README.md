@@ -1,4 +1,4 @@
-# ionic2-app-rest
+# Ionic2 App Rest
 
 Ionic2 Application to consume an API
 
